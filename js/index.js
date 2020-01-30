@@ -8,7 +8,7 @@ function swapcolor() {
 function loaddarkgraph(){
     $("#chartContainer").fadeOut(1)
         $("#color_var").attr("href","css/dark.css");
-        document.cookie = "theme=dark"
+        document.cookie = 'theme=dark;path=/;SameSite=None; Secure';
         var chart = new CanvasJS.Chart("chartContainer", {
             theme: "dark2", // "light1", "light2", "dark1", "dark2"
             exportEnabled: false,
@@ -46,7 +46,7 @@ function loaddarkgraph(){
 function loadlightgraph(){
     $("#chartContainer").fadeOut(1);
         $("#color_var").attr("href","css/light.css");
-        document.cookie = "theme=light";
+        document.cookie = 'theme=light;path=/;SameSite=None; Secure';
         var chart = new CanvasJS.Chart("chartContainer", {
             theme: "light2", // "light1", "light2", "dark1", "dark2"
             exportEnabled: false,
