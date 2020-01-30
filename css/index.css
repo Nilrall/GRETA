@@ -1,0 +1,63 @@
+
+body {
+  padding-top: 56px;
+  background-color: var(--main-principal-color);
+  color:var(--main-principal-text-color);
+  transition: 2s;
+}
+
+.background_color {
+  background-color: var(--main-secondary-color);
+  transition: 2s;
+}
+
+.card_purple{
+  background-color: var(--main-secondary-color);
+  color: var(--main-secondary-text-color);
+  font-size: 2rem;
+  font-weight: bold;
+  transition: 2s;
+}
+
+.white_card{
+  color: var(--white-card-color);
+  background-color: var(--white-card-background-color);
+}
+
+.switch_button{
+  margin-top: 5px;
+  background-color: var(--main-button-switch-color);
+  color: var(--main-button-switch-text-color);
+  transition: 2s;
+  width: 130px;
+  height: 30px;
+  padding: 0.2rem;
+}
+
+.switch_button:hover,.switch_button:focus{
+  box-shadow: 0 0 0 0.2rem var(--main-button-switch-color);
+  color: var(--main-button-switch-text-color);
+}
+
+.conteneur{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.conteneur>.element{
+  width: 33%;
+}
+
+#container_chartContainer{
+  height: 400px; 
+  overflow:hidden; /*hide bounds of image */
+}
+
+#container_chartContainer #chartContainer{
+  display:block; /*remove inline-block spaces*/
+  width:100%; /*make image streatch*/
+  height: 420px; 
+  max-width: 920px; 
+  margin: 0px auto;
+}

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Portfolio MASSE Alex</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link id='color_var' href="css/light.css" rel="stylesheet">
+  <link href="css/index.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark background_color fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">MASSE Alex</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <!-- <li class="nav-item active">
+            <a class="nav-link" href="#">Accueil
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" data-toggle="modal" data-target="#formulaire_contact">Contact</a>
+          </li> -->
+          <li class="nav-item">
+            <button type="button" class="btn switch_button btn-sm" onclick="swapcolor()">Changer de thème</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="row align-items-center my-5">
+      <div id="container_chartContainer" class="col-lg-7">
+        <div id="chartContainer"></div>
+      </div>
+      <div id="pitch_competence" class="col-lg-5">
+        <h1 id="title_competence" class="font-weight-light">Résumé</h1>
+        <p id="intro">Apprentissage en autodidactie, depuis 2014, j'ai commencé à apprendre le Powershell dans le cadre de mon projet de fin d'étude afin de remplacer un système de script VBS que personne maintenait et qui vieillissait. J'ai donc développer tout un environement de script allant de la création de compte AD complexe aux ajouts de groupe et à la désactivation des comptes. Non contend de cette évolution, suite à l'obtention de mon diplôme GMSI je me suis lancé un nouveau challenge, développer un site web relié à une base de donnée. Je suis donc passé par l'apprendtissage à partir de rien de l'HTML du CSS puis du Javascript(JQuery) et enfin le PHP et le SQL. Challenge qui est été réussi et qui tourne donc en production aujourd'hui.</p>
+        <p id="Powershell" style="display: none;">Premier langage appris, il est la principale source de construction de mon schéma de pensée algorithmique. Il est le langage dans lequel je me sent le plus à l'aise ajourd'hui.</p>
+        <p id="CSS" style="display: none;">Quatrième langage appris, il est également le langage avec lequel je suis le moins à l'aise avec l'HTML. J'arrive à construire ce que j'imagine, mais cela me prend plus de temps et de recherche.</p>
+        <p id="HTML" style="display: none;">Troisième langage appris, il est également le langage avec lequel je suis le moins à l'aise avec le CSS. J'arrive à construire ce que j'imagine, mais cela me prend plus de temps et de recherche.</p>
+        <p id="PHP" style="display: none;">Cinquième langage appris, il est le second langage dans lequel je me débrouille le mieux avec le Powershell et le SQL. Il est ce qui se rapproche le plus de mon approche scripting ce qui rend plus facile mon apprentissage.</p>
+        <p id="SQL" style="display: none;">Sixième langage appris, en adéquation avec l'utilisation du php et ce que me proposait mon entreprise, il est le langage que j'ai le mieux assimilé avec le PHP.</p>
+        <p id="Jquery" style="display: none;">Septième langage appris, il s'approche aussi plutôt de mon approche scripting. J'y suis donc à l'aise.</p>
+        <p id="AJAX" style="display: none;">Huitième langage appris, il est la cole qui reliais toutes les autres compétences. J'y suis à l'aise sans trop me faciliter l'apprentissage.</p>
+      </div>
+    </div>
+
+    <div class="card card_purple my-5 py-4 text-center">
+      <div class="card-body">
+        <p class=" m-0">Formations</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-4 mb-5">
+        <div class="card white_card h-100">
+          <div class="card-body">
+            <h2 class="card-title">Développement de site web dynamique</h2>
+            <p class="card-text">Formation qualifiante Vertego sur le PHP, SQL et AJAX</p>
+            <p class="card-text"><span style="font-style: italic;font-weight: bold;">Durée :</span style=""> 5 jours</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-5">
+        <div class="card white_card h-100">
+          <div class="card-body">
+            <h2 class="card-title">HTML CSS</h2>
+            <p class="card-text">Formation qualifiante Vertego sur l'HTML et le CSS</p>
+            <p class="card-text"><span style="font-style: italic;font-weight: bold;">Durée :</span> 3 jours</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-5">
+        <div class="card white_card h-100">
+          <div class="card-body">
+            <h2 class="card-title">CESI - GMSI</h2>
+            <p class="card-text">Formation alternance Bac+2 en Gestion et maintenance des systèmes informatiques, dont un projet en particulier un portfolio sur wordpress</p>
+            <p class="card-text"><span style="font-style: italic;font-weight: bold;">Durée :</span> 2 ans</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <footer class="py-5 bg-dark">
+
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="js/index.js"></script>
+  <script src="js/canvasjs.min.js"></script>
+</body>
+
+</html>
