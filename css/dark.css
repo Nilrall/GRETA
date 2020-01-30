@@ -1,0 +1,11 @@
+:root {
+    --main-principal-color: black;
+    --main-secondary-color: darkslateblue;
+    --main-principal-text-color: white;
+    --main-secondary-text-color: black;
+    --main-button-switch-color:gray;
+    --main-button-switch-text-color:black;
+
+    --white-card-color:white;
+    --white-card-background-color:gray;
+}
