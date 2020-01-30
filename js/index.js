@@ -29,13 +29,13 @@ function loaddarkgraph(){
                 indexLabel: "{label} - {y}/10",
                 click: competencesinfo,
                 dataPoints: [
-                    { y: 5, label: "AJAX" },
-                    { y: 5, label: "Jquery" },
-                    { y: 6, label: "SQL" },
-                    { y: 6, label: "PHP" },
-                    { y: 4, label: "HTML" },
-                    { y: 3, label: "CSS" },
-                    { y: 7, label: "Powershell" }
+                    { y: 5, label: "AJAX", cursor: "help" },
+                    { y: 5, label: "Jquery", cursor: "help" },
+                    { y: 6, label: "SQL", cursor: "help" },
+                    { y: 6, label: "PHP", cursor: "help"},
+                    { y: 4, label: "HTML", cursor: "help" },
+                    { y: 3, label: "CSS", cursor: "help" },
+                    { y: 7, label: "Powershell", cursor: "help" }
                 ]
             }]
         });
@@ -67,13 +67,13 @@ function loadlightgraph(){
                 indexLabel: "{label} - {y}/10",
                 click: competencesinfo,
                 dataPoints: [
-                    { y: 5, label: "AJAX" },
-                    { y: 5, label: "Jquery" },
-                    { y: 6, label: "SQL" },
-                    { y: 6, label: "PHP" },
-                    { y: 4, label: "HTML" },
-                    { y: 3, label: "CSS" },
-                    { y: 7, label: "Powershell" }
+                    { y: 5, label: "AJAX", cursor: "help" },
+                    { y: 5, label: "Jquery", cursor: "help" },
+                    { y: 6, label: "SQL", cursor: "help" },
+                    { y: 6, label: "PHP", cursor: "help"},
+                    { y: 4, label: "HTML", cursor: "help" },
+                    { y: 3, label: "CSS", cursor: "help" },
+                    { y: 7, label: "Powershell", cursor: "help" }
                 ]
             }]
         });
