@@ -60,12 +60,13 @@ function loadlightgraph(){
             data: [{
                 type: "bar",
                 startAngle: 25,
-                toolTipContent: "<b>{label}</b>: {y}/10",
+                // toolTipContent: "<b>{label}</b>: {y}/10",
                 showInLegend: "true",
                 legendText: " ",
                 indexLabelFontSize: 16,
                 indexLabel: "{label} - {y}/10",
                 click: competencesinfo,
+                mouseover: competencesinfo,
                 dataPoints: [
                     { y: 5, label: "AJAX", cursor: "help" },
                     { y: 5, label: "Jquery", cursor: "help" },
@@ -82,14 +83,14 @@ function loadlightgraph(){
 }
 
 function competencesinfo(e){
-    $("#pitch_competence p").hide("slow").promise().done(function (){
-        $("#"+e.dataPoint.label).show("slow");
+    $("#pitch_competence p").fadeOut(500).promise().done(function (){
+        $("#"+e.dataPoint.label).fadeIn(500);
         $("#title_competence").text(e.dataPoint.label)
     })
 }
 
 $( document ).ready(function() {
-
+    var t
     if(document.cookie.indexOf("theme")<0){document.cookie = 'theme=light;path=/;SameSite=None; Secure';}
     
     if(document.cookie.indexOf("theme")>=0 && document.cookie.indexOf("light")<0){
@@ -98,5 +99,18 @@ $( document ).ready(function() {
     else {
         loadlightgraph()
     }    
+
+    $("#competences_area").mouseleave(function(){
+        t = setTimeout(function(){
+            $("#pitch_competence p").fadeOut(500).promise().done(function (){
+                $("#intro").fadeIn(500);
+                $("#title_competence").text("Résumé")
+            })
+        }, 5000)
+    })
+
+    $("#competences_area").mouseenter(function(){
+        clearTimeout(t);
+    })
 });
 
