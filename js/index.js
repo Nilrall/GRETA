@@ -1,5 +1,6 @@
 function swapcolor() {
     if ($("#color_var").attr("href").indexOf("light") > 0){
+        $("#chartContainer").fadeOut(1)
         $("#color_var").attr("href","css/dark.css");
         var chart = new CanvasJS.Chart("chartContainer", {
             theme: "dark2", // "light1", "light2", "dark1", "dark2"
@@ -31,9 +32,12 @@ function swapcolor() {
                 ]
             }]
         });
+        $("#chartContainer").fadeIn(2000)
         chart.render();
+        
     }
     else {
+        $("#chartContainer").fadeOut(1)
         $("#color_var").attr("href","css/light.css");
         var chart = new CanvasJS.Chart("chartContainer", {
             theme: "light2", // "light1", "light2", "dark1", "dark2"
@@ -65,7 +69,9 @@ function swapcolor() {
                 ]
             }]
         });
+        $("#chartContainer").fadeIn(2000)
         chart.render();
+        
     }
 
     
